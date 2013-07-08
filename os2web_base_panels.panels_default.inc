@@ -38,21 +38,12 @@ function os2web_base_panels_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-1';
     $pane->panel = 'left';
-    $pane->type = 'menu_tree';
-    $pane->subtype = 'os2web-menu-contentmenu';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-5';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'menu_name' => 'os2web-menu-contentmenu',
-      'parent_mlid' => 'os2web-menu-contentmenu:508',
-      'title_link' => 0,
-      'admin_title' => '',
-      'level' => '2',
-      'follow' => 0,
-      'depth' => '1',
-      'expanded' => 0,
-      'sort' => 0,
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -159,21 +150,12 @@ function os2web_base_panels_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-4';
     $pane->panel = 'left';
-    $pane->type = 'menu_tree';
-    $pane->subtype = 'os2web-menu-contentmenu';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-4';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'menu_name' => 'os2web-menu-contentmenu',
-      'parent_mlid' => 'os2web-menu-contentmenu:509',
-      'title_link' => 0,
-      'admin_title' => '',
-      'level' => '2',
-      'follow' => 0,
-      'depth' => 0,
-      'expanded' => 0,
-      'sort' => 0,
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -280,21 +262,12 @@ function os2web_base_panels_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-7';
     $pane->panel = 'left';
-    $pane->type = 'menu_tree';
-    $pane->subtype = 'os2web-menu-contentmenu';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-6';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'menu_name' => 'os2web-menu-contentmenu',
-      'parent_mlid' => 'os2web-menu-contentmenu:507',
-      'title_link' => 0,
-      'admin_title' => '',
-      'level' => '2',
-      'follow' => 0,
-      'depth' => 0,
-      'expanded' => 0,
-      'sort' => 0,
-      'override_title' => 0,
+      'override_title' => 1,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -399,13 +372,85 @@ function os2web_base_panels_default_panels_mini() {
     $pane = new stdClass();
     $pane->pid = 'new-10';
     $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-4';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Borger',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'grid-2 alpha',
+    );
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-10'] = $pane;
+    $display->panels['center'][0] = 'new-10';
+    $pane = new stdClass();
+    $pane->pid = 'new-11';
+    $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-5';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Erhverv',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'grid-2',
+    );
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-11'] = $pane;
+    $display->panels['center'][1] = 'new-11';
+    $pane = new stdClass();
+    $pane->pid = 'new-12';
+    $pane->panel = 'center';
+    $pane->type = 'block';
+    $pane->subtype = 'menu_block-6';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => 'Politik & Planer',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array(
+      'css_id' => '',
+      'css_class' => 'grid-2',
+    );
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = array();
+    $display->content['new-12'] = $pane;
+    $display->panels['center'][2] = 'new-12';
+    $pane = new stdClass();
+    $pane->pid = 'new-13';
+    $pane->panel = 'center';
     $pane->type = 'views';
     $pane->subtype = 'os2web_base_panels_view_selfserv';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
       'override_pager_settings' => 0,
-      'use_pager' => 1,
+      'use_pager' => 0,
       'nodes_per_page' => '10',
       'pager_id' => '0',
       'offset' => '0',
@@ -416,8 +461,8 @@ function os2web_base_panels_default_panels_mini() {
       'args' => '',
       'url' => '',
       'display' => 'block_3',
-      'override_title' => 1,
-      'override_title_text' => 'SELVBETJENING',
+      'override_title' => 0,
+      'override_title_text' => '',
     );
     $pane->cache = array();
     $pane->style = array(
@@ -428,10 +473,10 @@ function os2web_base_panels_default_panels_mini() {
       'css_class' => 'grid-2 omega',
     );
     $pane->extras = array();
-    $pane->position = 0;
+    $pane->position = 3;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['center'][0] = 'new-10';
+    $display->content['new-13'] = $pane;
+    $display->panels['center'][3] = 'new-13';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $mini->display = $display;
@@ -461,7 +506,7 @@ function os2web_base_panels_default_panels_mini() {
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-11';
+    $pane->pid = 'new-14';
     $pane->panel = 'middle';
     $pane->type = 'block';
     $pane->subtype = 'nice_menus-1';
@@ -479,8 +524,8 @@ function os2web_base_panels_default_panels_mini() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-11'] = $pane;
-    $display->panels['middle'][0] = 'new-11';
+    $display->content['new-14'] = $pane;
+    $display->panels['middle'][0] = 'new-14';
   $display->hide_title = PANELS_TITLE_FIXED;
   $display->title_pane = '0';
   $mini->display = $display;

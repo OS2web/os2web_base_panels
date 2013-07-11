@@ -23,8 +23,8 @@ libraries[jcarousel][destination] = "libraries"
 
 ; Basic
 
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.3"
+# projects[ctools][subdir] = "contrib"
+# projects[ctools][version] = "1.3"
 
 projects[delta][subdir] = "contrib"
 projects[delta][version] = "3.0-beta11"
